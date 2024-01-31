@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script src="index.js" type="text/babel"></script>
+</head>
+
+<body>
+    <header id="container" class= "container" >
+        <h1 id="text" class="text">HI, ATIYA!!!</h1>
+    </header>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        const mytext= new SplitType('.text');
+        gsap.to('.char',{
+            y:0,
+            stagger: .25,
+            delay:0,
+            duration:1,
+        })
+        gsap.to('.char',{
+            y:-100,
+            stagger: .25,
+            delay: 5,
+            duration:0.1,
+        })
+         setTimeout(() => {  document.getElementById("container").style.display="none";
+         document.getElementById("app").style.display="flex";
+      }, 9000);
+
+    </script>
+    <div id="app" class="app"></div>
+</body>
+
+</html>
