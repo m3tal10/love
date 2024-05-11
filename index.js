@@ -5,7 +5,7 @@ const code = (
         <img className="img" id="img" src="dudupropose.gif" width="276.77" height="238" />
         <div className="button" id="button">
             <button className="yes" id="yes" onClick={yes}>Yes</button>
-            <button className="no" id="no" onHover={no}>No</button>
+            <button className="no" id="no" onHClick={no}>No</button>
         </div>
 
     </div>
